@@ -1,0 +1,171 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0;
+}
+*{
+    
+    box-sizing:inherit;
+}
+
+header{
+    width: 100%;
+    background-color:gainsboro;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.menu li{
+    display: inline-block;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+.menu li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    background-color: azure;
+
+}
+
+#imgperfil{
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    height: auto;
+    
+}
+.info{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 20px;
+}
+.emoji{
+    display: flex;
+    align-items: left;
+    gap:20px;
+    
+    
+}
+
+.card-group{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 800px;
+    margin: 0 auto;
+    gap: 30px;
+    
+}
+main{
+    padding-top: 40px;
+}
+aside{
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-item img {
+    max-width: 100%; /* Imagens do carrossel responsivas */
+    height: auto;
+}
+#carrou1{
+    width: 640px;
+    height: 360px;
+}
+#carrou2{
+        width: 640px;
+        height: 360px;
+}
+#carrou3{
+    width: 640px;
+    height: 360px;
+}
+.colegas{
+    display:flex;
+    gap: 20px;
+}
+#colega1{
+    width: 100px;
+    height: 100px;
+}
+#colega2{
+    width: 100px;
+    height: 100px;
+}
+#colega3{
+    width: 100px;
+    height: 100px;
+}
+footer{
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 767px){
+    .header{
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .menu {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #imgperfil {
+        width: 150px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .aside {
+        display: block;
+        width: 90%; /* Define a largura máxima do elemento aside em relação à largura do viewport */
+        max-width: 90vw; /* Define a largura máxima do elemento aside em relação à largura da janela de visualização */
+    }
+
+    .card-group {
+        width: 90%; /* Define a largura máxima do grupo de cartões em relação à largura do viewport */
+        max-width: 90vw; /* Define a largura máxima do grupo de cartões em relação à largura da janela de visualização */
+        margin: 0 auto; /* Centralizar os cartões horizontalmente */
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #imgperfil {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card-group {
+        width: 500px;
+    }
+}
+
+    
