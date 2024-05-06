@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+</head>
+<body>
+    <script>
+       var resultado;
+    var escolha = prompt("Escolha uma operação:\nDivisão\nAdição\nSubtração\nMultiplicação");
+    var n1 = parseFloat(prompt("Digite a primeira nota:\n"));
+    var n2 = parseFloat(prompt("Digite a segunda nota:\n"));
+
+    if(escolha == 'Divisão'){
+        resultado = n1 / n2;
+        alert("O resultado da operação é:\n" + resultado);
+    } else if(escolha == 'Adição'){
+        resultado = n1 + n2;
+        alert("O resultado da operação é:\n" + resultado);
+    } else if(escolha == 'Subtração'){
+        resultado = n1 - n2;
+        alert("O resultado da operação é:\n" + resultado);
+    } else if(escolha == 'Multiplicação'){
+        resultado = n1 * n2;
+        alert("O resultado da operação é:\n" + resultado);
+    } else {
+         alert("Escolha inválida");
+    }
+
+    </script>
+</body>
+</html>
